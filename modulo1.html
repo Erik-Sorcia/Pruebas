@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiCode | Módulo 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navegacion">
+            <a href="index.html" class="logo">LogiCode</a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="desplegable">
+                    <span class="desplegable-gatillo">Módulos ▾</span>
+                    <div class="desplegable-contenido">
+                        <a href="modulo0.html">Módulo 0: Algoritmos</a>
+                        <a href="modulo1.html">Módulo 1: Variables</a>
+                        <a href="modulo2.html">Módulo 2: Flujos</a>
+                    </div>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tarjeta-clase">
+            <h2>Módulo 1: ¿Qué es una Variable?</h2>
+            
+            <p><strong>Definición Técnica:</strong> En programación, una variable es un espacio de almacenamiento reservado en la memoria principal del computador (RAM) asociado a un identificador (nombre), cuyo valor guardado puede ser modificado durante la ejecución del programa.</p>
+            
+            <div class="bloque-didactico">
+                <h4>Explicación en lenguaje sencillo:</h4>
+                <p>Imagina una variable como una **caja de zapatos** que tiene una etiqueta escrita con plumón afuera. El nombre de la etiqueta no cambia (por ejemplo, "caja_edad"), pero lo que guardas adentro del contenedor lo puedes cambiar las veces que quieras.</p>
+            </div>
+
+            <h3>Ejemplos de analogías y equivalencias:</h3>
+            <ul class="lista-ejemplos">
+                <li><strong>En Matemáticas / Álgebra:</strong> Cuando dices que <pre style="display:inline;">x = 5</pre>, estás usando una variable llamada "x" para guardar el número 5.</li>
+                <li><strong>En los Videojuegos:</strong> La variable "puntuacion" aumenta de valor cada vez que destruyes un objetivo o recoges una moneda.</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">Laboratorio de Práctica</h3>
+            <div style="margin: 20px 0;">
+                <label style="color: #8a99ad; font-weight: bold; display: block; margin-bottom: 10px;">Ingresa un número (usa el teclado numérico directamente):</label>
+                <input type="number" id="numero-ingresado" value="5" oninput="cambiarValor()">
+            </div>
+
+            <div class="contenedor-memoria">
+                <div class="bloque-celda">
+                    <h4>En Álgebra</h4>
+                    <p style="font-size: 1.5rem; margin: 0;">x = <span id="ver-algebra" style="color: #00a2ff; font-weight: bold;">5</span></p>
+                </div>
+                <div class="bloque-celda" style="border-left-color: #10b981;">
+                    <h4>En Código (Java)</h4>
+                    <p style="font-size: 1.1rem; margin: 0; font-family: monospace; color: #10b981;">int x = <span id="ver-java" style="color: #fff;">5</span>;</p>
+                </div>
+                <div class="bloque-celda" style="border-left-color: #00f0ff;">
+                    <h4>En la Memoria RAM</h4>
+                    <p style="margin: 0; font-size: 1.1rem;">[ Caja X ] guarda el valor: <span id="ver-ram" style="color: #00f0ff; font-weight: bold;">5</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 LogiCode | Facultad de Estadística e Informática - UV</p>
+    </footer>
+
+    <script src="modulo1.js"></script>
+</body>
+</html>

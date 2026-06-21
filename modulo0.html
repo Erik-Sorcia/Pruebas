@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiCode | Módulo 0: Algoritmos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navegacion">
+            <a href="index.html" class="logo">LogiCode</a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="desplegable">
+                    <span class="desplegable-gatillo">Módulos ▾</span>
+                    <div class="desplegable-contenido">
+                        <a href="modulo0.html">Módulo 0: Algoritmos</a>
+                        <a href="modulo1.html">Módulo 1: Variables</a>
+                        <a href="modulo2.html">Módulo 2: Flujos</a>
+                    </div>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-clase">
+
+        <section class="tarjeta-clase">
+            <div class="encabezado-paso">PASO 1 • FUNDAMENTO TEÓRICO</div>
+            <h2>¿Qué es un Algoritmo?</h2>
+            <p>En informática, es un conjunto de instrucciones ordenadas para resolver un problema. Para que sea válido, debe cumplir con 3 reglas obligatorias:</p>
+            
+            <div class="contenedor-reglas">
+                <div class="tarjeta-regla">
+                    <span class="icono-regla">🎯</span>
+                    <h4>Preciso</h4>
+                    <p>Tiene un orden estricto paso a paso.</p>
+                </div>
+                <div class="tarjeta-regla" style="border-top-color: #10b981;">
+                    <span class="icono-regla">🧬</span>
+                    <h4>Definido</h4>
+                    <p>Si metes los mismos datos, da el mismo resultado.</p>
+                </div>
+                <div class="tarjeta-regla" style="border-top-color: #ef4444;">
+                    <span class="icono-regla">🏁</span>
+                    <h4>Finito</h4>
+                    <p>Tiene que terminar en algún momento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tarjeta-clase">
+            <div class="encabezado-paso">PASO 2 • CONTEXTO HISTÓRICO</div>
+            <h2>El Origen del Nombre</h2>
+            <div class="bloque-didactico">
+                <p>La palabra <strong>Algoritmo</strong> no viene de las computadoras modernas. Viene del nombre de un matemático persa del siglo IX: <strong>Muhammad ibn Musa al-Khwarizmi</strong>.</p>
+                <p>Él inventó las reglas paso a paso para hacer sumas, restas y divisiones en papel. La lógica siempre ha sido la misma: una secuencia ordenada para resolver un problema.</p>
+            </div>
+        </section>
+
+        <section class="tarjeta-clase">
+            <div class="encabezado-paso">PASO 3 • COMPRENSION COTIDIANA</div>
+            <h2>La Lógica en el Mundo Real</h2>
+            <p>Un algoritmo es exactamente igual a una <strong>receta de cocina</strong> o un <strong>manual de armado</strong>.</p>
+            
+            <div class="bloque-alerta">
+                <h4>⚠️ La regla de oro: Las máquinas no tienen sentido común</h4>
+                <p>Las computadoras leen el código de arriba hacia abajo, línea por línea. Si alteras la secuencia temporal o te saltas un paso indispensable, el sistema falla por completo.</p>
+            </div>
+        </section>
+
+        <section class="tarjeta-clase">
+            <div class="encabezado-paso">PASO 4 • ARQUITECTURA DEL PROCESO</div>
+            <h2>Las 3 Etapas de un Programa</h2>
+            <p>Cualquier software del mundo procesa la información dividiéndose en estos tres bloques:</p>
+            
+            <div class="bloques-memoria">
+                <div class="bloque-celda" style="border-left-color: #7c3aed;">
+                    <h4>1. Entrada (Input)</h4>
+                    <p>Los datos o ingredientes iniciales que recibe el sistema.</p>
+                </div>
+                <div class="bloque-celda" style="border-left-color: #10b981;">
+                    <h4>2. Proceso</h4>
+                    <p>Los cálculos lógicos y la ejecución de los pasos secuenciales.</p>
+                </div>
+                <div class="bloque-celda" style="border-left-color: #00f0ff;">
+                    <h4>3. Salida (Output)</h4>
+                    <p>El resultado final obtenido (el mensaje en pantalla).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tarjeta-clase">
+            <div class="encabezado-paso">PASO 5 • MODELADO</div>
+            <h2>Ejemplo Resuelto: Cambiar una Llanta</h2>
+            <p>Así se desmenuza un problema real en instrucciones finitas para un sistema:</p>
+            
+            <ul class="lista-pasos-visual">
+                <li><span class="numero-lista">1</span> Poner freno de mano y reflejantes.</li>
+                <li><span class="numero-lista">2</span> Aflojar las tuercas con la llave de cruz.</li>
+                <li><span class="numero-lista">3</span> Colocar el gato hidráulico y levantar el coche.</li>
+                <li><span class="numero-lista">4</span> Quitar las tuercas y la llanta ponchada.</li>
+                <li><span class="numero-lista">5</span> Poner la refacción y bajar el coche.</li>
+                <li><span class="numero-lista">6</span> Apretar las tuercas fuertemente.</li>
+            </ul>
+        </section>
+
+        <section class="tarjeta-clase">
+            <div class="encabezado-paso">PASO 6 • PREVENCIÓN DE ERRORES</div>
+            <h2>El Peligro de los Bucles Infinitos</h2>
+            <p>Si olvidas decirle al programa cuándo detenerse, la computadora se quedará atrapada repitiendo el mismo paso para siempre, congelando el sistema.</p>
+            
+            <div class="caja-error-bucle">
+                <h4>🔄 Ejemplo clásico de bucle infinito:</h4>
+                <p>1. Mojar el cabello ➡️ 2. Aplicar champú ➡️ 3. Enjuagar ➡️ 4. Repetir proceso.</p>
+                <p class="nota-error">Al decirle "repetir proceso" sin una condición de salida, la máquina se lavará el pelo eternamente.</p>
+            </div>
+
+            <div class="bloque-didactico" style="border-left-color: #10b981; margin-top: 20px;">
+                <h4>Para evitar esto se puede:</h4>
+                <p>Agregar una <strong>condición de parada</strong> basada en una variable de control o contador. Por ejemplo, decirle al programa: <em>"Repetir el proceso de lavado únicamente si el cabello sigue sucio, hasta un máximo de 2 veces"</em>. Al cumplirse la condición, el algoritmo rompe el ciclo y pasa de forma obligatoria a la instrucción de salida (secar el cabello).</p>
+            </div>
+        </section>
+
+        <section class="tarjeta-clase">
+            <div class="encabezado-paso">PASO 7 • LABORATORIO PRÁCTICO</div>
+            <h2>Simulador de Desafíos Algorítmicos</h2>
+            <p>Pon a prueba tu sentido lógico. Selecciona uno de los tres problemas usando la cuadrícula de botones. Tu objetivo es descubrir y presionar los 5 pasos obligatorios en su secuencia exacta. Ten cuidado: hay 3 opciones trampa diseñadas específicamente para romper el sistema.</p>
+            
+            <div style="margin-bottom: 25px;">
+                <label style="color: #8a99ad; font-weight: bold; display: block; margin-bottom: 12px;">Selecciona el reto lógico:</label>
+                <div class="cuadricula-retos">
+                    <button id="selector-cajero" class="btn-reto activo">Cajero Automático</button>
+                    <button id="selector-carro" class="btn-reto">Encendido de Carro</button>
+                    <button id="selector-red" class="btn-reto">Inicio de Sesión Web</button>
+                </div>
+            </div>
+
+            <div class="controles-algoritmo" style="flex-direction: column; gap: 10px;">
+                <button id="btn-instruccion1" class="btn-paso" style="text-align: left;"></button>
+                <button id="btn-instruccion2" class="btn-paso" style="text-align: left;"></button>
+                <button id="btn-instruccion3" class="btn-paso" style="text-align: left;"></button>
+                <button id="btn-instruccion4" class="btn-paso" style="text-align: left;"></button>
+                <button id="btn-instruccion5" class="btn-paso" style="text-align: left;"></button>
+                <button id="btn-instruccion6" class="btn-paso" style="text-align: left;"></button>
+                <button id="btn-instruccion7" class="btn-paso" style="text-align: left;"></button>
+                <button id="btn-instruccion8" class="btn-paso" style="text-align: left;"></button>
+            </div>
+
+            <div style="margin-top: 15px; text-align: right;">
+                <button id="btn-reiniciar" style="width: auto; background-color: #232936; font-size: 0.9rem; padding: 8px 15px;">🔄 Reiniciar Historial</button>
+            </div>
+
+            <div class="consola-resultado" id="salida-consola">
+                <p style="color: #8a99ad; margin: 0;">Consola: Sistema inicializado. Determina la secuencia correcta de instrucciones...</p>
+            </div>
+
+            <div class="consola-resultado" style="border-color: #2d3545; background-color: #11141c; margin-top: 15px;">
+                <h4 style="margin: 0 0 10px 0; color: #00a2ff; font-size: 1rem;">Tu Algoritmo Construido (Historial de ejecución):</h4>
+                <div id="registro-camino" style="font-family: monospace; color: #8a99ad; font-size: 1rem; line-height: 1.6;">
+                    <em>Ninguna instrucción ejecutada todavía.</em>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 LogiCode | Facultad de Estadística e Informática - UV</p>
+    </footer>
+
+    <script src="modulo0.js"></script>
+</body>
+</html>

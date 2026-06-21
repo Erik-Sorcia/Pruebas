@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiCode | Módulo 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navegacion">
+            <a href="index.html" class="logo">LogiCode</a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="desplegable">
+                    <span class="desplegable-gatillo">Módulos ▾</span>
+                    <div class="desplegable-contenido">
+                        <a href="modulo0.html">Módulo 0: Algoritmos</a>
+                        <a href="modulo1.html">Módulo 1: Variables</a>
+                        <a href="modulo2.html">Módulo 2: Flujos</a>
+                    </div>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tarjeta-clase">
+            <h2>Módulo 2: Tomar Decisiones (Estructuras Condicionales)</h2>
+            
+            <p><strong>Definición Técnica:</strong> Una estructura de control condicional (bifurcación u operaciones de selección de alternativas) permite desviar el flujo lineal de ejecución de un algoritmo dependiendo del resultado lógico (Verdadero o Falso) obtenido al evaluar una condición matemática.</p>
+            
+            <div class="bloque-didactico">
+                <h4>Explicación en lenguaje sencillo:</h4>
+                <p>Es una bifurcación en el camino. El programa evalúa una pregunta. Si la respuesta es **SÍ**, se va por la derecha y ejecuta una acción; si la respuesta es **NO**, se va por la izquierda y ejecuta una acción completamente diferente. Nunca puede tomar los dos caminos al mismo tiempo.</p>
+            </div>
+
+            <h3>Ejemplos prácticos de condicionales:</h3>
+            <ul class="lista-ejemplos">
+                <li><strong>El clima:</strong> SI está lloviendo, abro un paraguas. SI NO está lloviendo, lo dejo guardado.</li>
+                <li><strong>Sistemas escolares:</strong> SI tu promedio es mayor o igual a 60, apruebas la materia. SI NO, tienes que presentar examen extraordinario.</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">Laboratorio de Práctica</h3>
+            <p>Haz una prueba de ejecución. Selecciona una calificación para observar el recorrido exacto que toma el flujo lógico del algoritmo:</p>
+            
+            <div class="controles-flujo">
+                <button onclick="moverFlujo(80)" style="width: auto;">Caso A: Calificación 80 (Aprobado)</button>
+                <button onclick="moverFlujo(45)" style="width: auto; background-color: #ef4444; border-color: #ef4444;">Caso B: Calificación 45 (Reprobado)</button>
+            </div>
+
+            <div class="contenedor-diagrama">
+                <div class="nodo-bloque" id="bloque-inicio">Inicio</div>
+                <div class="nodo-bloque" id="bloque-pregunta" style="border-color: #7c3aed;">¿Calificación >= 60?</div>
+                
+                <div class="bifurcacion-caminos">
+                    <div class="nodo-bloque" id="bloque-si">SÍ ➡️ Mostrar "Aprobado"</div>
+                    <div class="nodo-bloque" id="bloque-no">NO ➡️ Mostrar "Reprobado"</div>
+                </div>
+                
+                <div class="nodo-bloque" id="bloque-fin">Fin</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 LogiCode | Facultad de Estadística e Informática - UV</p>
+    </footer>
+
+    <script src="modulo2.js"></script>
+</body>
+</html>
